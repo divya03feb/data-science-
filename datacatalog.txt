@@ -1,0 +1,34 @@
+Benifits of datacatalogs
+
+Data addition or Updation
+
+It auto sync the data from different datasource automatically, so for example, if you have created a new table in BigQuery within 3 seconds it shows up in data catalog
+and you don't have to register that table in datacatalog every time, which was heVy thing in traditional data catalog
+
+Data sources
+BigQuery
+Pub/Sub
+CloudStorage
+
+
+Data Identification:
+Usecase: Most of the customers have thousands of tables and different of coloumns of inside those tables, now customerswants to ideniotfy 
+weather it is PII data or not (Personal Identification Information), like weather it is an social security number or credit card number, but they want to change this data, they just need to idenitfy this lots of data.
+so once integrates with DLP, it scans the data and PII tag will be applied to customer data.
+Integrate seamlessly with DLP (data loss preventions)
+
+Support non-gcp data assets through open-source connectore, whcich are avilable in GITHUB, you can even ingest metadata from BIT tools like
+tableau
+
+How robust is the service?
+How scalable is the services
+
+How datacatalog works
+
+So we have snycers which get different metadat from different sources, which then get stores in metadata store (Spanner database), then we have google search based technology, using which ustomer search there data in catalog with access control in-place
+
+
+It provided structured tag (scehmatized tag), unlike;y old data catalog solution which only support stringify tags.
+Tag can have different field and each can be on different type, we support 5 different type of filed. The tags can also applied into coloumn level
+
+
